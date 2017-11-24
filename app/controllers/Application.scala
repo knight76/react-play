@@ -34,7 +34,7 @@ class Application @Inject()(implicit webJarAssets: WebJarAssets, env: Environmen
 
       Ok(views.html.main("React on Play", webJarAssets) {
         play.twirl.api.Html(engine.eval("React.renderToString(React.createElement(App));").toString)
-      })
+    })
     }
   }
 

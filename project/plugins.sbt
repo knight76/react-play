@@ -9,4 +9,6 @@ resolvers += "Typesafe repository" at "https://repo.typesafe.com/typesafe/releas
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.3")
 
 // transform JSX assets
-addSbtPlugin("com.github.ddispaltro" % "sbt-reactjs" % "0.6.8")
+addSbtPlugin("com.github.ddispaltro" % "sbt-reactjs" % "0.6.8" exclude("org.webjars.npm", "minimatch"))
+
+libraryDependencies +=  "org.webjars.npm" % "minimatch" % "2.0.10"
